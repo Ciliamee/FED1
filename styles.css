@@ -1,0 +1,1145 @@
+@font-face {
+  font-family: 'ikeadfont';
+  src: url('fonts/ikeafontbold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* https://fontswan.com/ikea-font/ */
+
+@font-face {
+  font-family: 'ikeafont';
+  src: url('fonts/ikeafontregular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* https://fontswan.com/ikea-font/ */
+
+
+
+
+
+
+:root {
+
+  --Light-main-text-color: #484848;
+  --Light-second-text-color: #f5f5f5;
+  --Light-main-header-color: #000;
+  --Light-main-background-color: #f5f5f5ea;
+  --Light-second-background-color: white;
+  --Light-main-line-color: #b7b7b7;
+  --Light-main-link-color: rgb(72, 72, 72);
+  --Light-main-button-color: #fff;
+  --Light-second-button-color: #000;
+  --Light-main-active-button: rgb(118, 118, 118);
+  --ikea-rood: #CC0008;
+  --ikea-blauw: rgb(0, 88, 163);
+  --Light-main-border-color: #bfbfbf;
+  --Light-main-body-color: white;
+}
+
+/* https://www.youtube.com/watch?v=sQUB039MG0I&t=38s */
+
+
+body {
+  font-family: 'ikeafont', sans-serif;
+  font-weight: normal;
+
+  border: 0;
+  background-color: var(--Light-main-body-color);
+
+}
+
+main {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+header {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'ikeafont', sans-serif;
+  font-weight: bold;
+  font-size: 1.26rem;
+  line-height: 1.9;
+  margin-bottom: .5rem;
+}
+
+p {
+  font-size: .9rem;
+  line-height: 1.571;
+  margin: 0;
+  color: var(--Light-main-text-color);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--Light-main-link-color);
+  ;
+}
+
+
+
+
+
+
+
+
+/* ***HEADER*** */
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+header nav:first-child img {
+  width: 5.6rem;
+
+
+}
+
+
+header nav :nth-child(4) img,
+header nav :nth-child(5) img {
+  width: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+header nav :nth-child(2) img,
+header nav :nth-child(3) img {
+  width: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+header nav ul li {
+  padding-left: 1rem;
+}
+
+header div:first-of-type {
+  display: flex;
+  justify-content: space-between;
+}
+
+header button {
+  border: 0;
+  border-radius: 1rem;
+
+  background-color: var(--Light-second-background-color);
+  margin-top: .35rem;
+
+  line-height: 1.6rem;
+  font-size: .9rem;
+
+  display: inline-flex;
+  align-items: center;
+}
+
+header button img {
+  width: 1.5rem;
+  margin: 0 0.35rem 0 0rem;
+}
+
+
+
+
+
+
+
+
+
+/* INPUT FORM */
+
+form {
+  display: flex;
+  flex-direction: row;
+}
+
+
+input {
+  display: block;
+  width: 100%;
+  height: 3.125rem;
+
+  padding: 0.5rem;
+  padding-inline: 3.25rem 3.375rem;
+  margin: 0 auto;
+
+  font-size: 1rem;
+  line-height: 1.5;
+
+
+  border: 2px solid transparent;
+  border-radius: 50em;
+
+  box-shadow: none;
+  background-color: var(--Light-main-background-color);
+}
+
+/* https://www.ikea.com/nl/nl/ */
+
+
+
+
+
+
+
+
+/* foto 1 */
+.fotos img {
+  width: 90vw;
+  margin-top: 1.5rem;
+  z-index: -1;
+
+}
+
+
+.fotos .popup-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 8rem;
+  height: fit-content;
+  background-color: var(--Light-second-background-color);
+  z-index: 1;
+}
+
+
+.fotos .popup-container {
+  display: none;
+}
+
+.fotos div h2 {
+  font-size: .83rem;
+  margin-bottom: 0;
+  color: var(--Light-main-header-color);
+  margin: 0 .5rem 0 .5rem;
+}
+
+.fotos div h3 {
+  color: var(--ikea-rood);
+  font-size: .8rem;
+  margin: .5rem .5rem 0 .5rem;
+}
+
+.fotos div h4 {
+  font-weight: normal;
+  font-size: .8rem;
+  margin: 0 .5rem 0 .5rem;
+
+}
+
+.fotos div p {
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--Light-main-text-color);
+  margin: 0 .5rem .5rem .5rem;
+}
+
+
+
+.fotos .openButton {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 30px;
+  border-color: var(--Light-main-border-color);
+  background-color: var(--Light-second-background-color);
+  opacity: 40%;
+
+}
+
+
+.fotos button:nth-of-type(1) {
+  position: absolute;
+  left: 25vw;
+  bottom: 20vh;
+}
+
+.fotos div:nth-of-type(1) {
+  position: absolute;
+  left: 25vw;
+  bottom: 6vh;
+}
+
+.fotos button:nth-of-type(2) {
+  position: absolute;
+  left: 67vw;
+  bottom: 14vh;
+}
+
+.fotos div:nth-of-type(2) {
+  position: absolute;
+  left: 35vw;
+  bottom: 0;
+}
+
+.fotos button:nth-of-type(3) {
+  position: absolute;
+  bottom: -12vh;
+  left: 25vw;
+}
+
+.fotos div:nth-of-type(3) {
+  position: absolute;
+  left: 27vw;
+  top: 112vh;
+}
+
+
+
+
+
+
+
+/* foto 2 */
+.fotos .foto-container {
+  display: flex;
+  width: 100vw;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+
+}
+
+.fotos .foto-container img {
+  width: 43vw;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0.5rem 1rem 0 0;
+
+}
+
+.fotos .foto-container :nth-child(3) img {
+  position: relative;
+  bottom: 3.45rem;
+}
+
+.fotos a img {
+  width: auto;
+  height: 1rem;
+}
+
+
+
+
+
+
+
+/* **** SLIDERS *****  */
+.sliders {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* https://chat.openai.com/c/ed29a705-cec3-46fb-a21f-15b470288b3a */
+
+.sliders ul {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.sliders h2 {
+  margin-bottom: 2.4rem;
+}
+
+.sliders div ul li {
+  width: 90vw;
+  height: 100vh;
+  margin-right: 2rem;
+
+}
+
+.sliders div ul li {
+  background-color: var(--Light-main-background-color);
+  margin-bottom: 2rem;
+}
+
+.sliders div ul:first-child p,
+h3 {
+  color: var(--Light-second-text-color);
+
+}
+
+.sliders div ul li img {
+  width: 90vw;
+  height: 50vh;
+  object-fit: cover;
+  /* zorgt dat foto niet uitrekt */
+  /* https://chat.openai.com/c/ed29a705-cec3-46fb-a21f-15b470288b3a */
+}
+
+
+
+/* SLiders 3 */
+.sliders:nth-of-type(3) ul li img {
+  width: 65vw;
+}
+
+.sliders:nth-of-type(3) ul li {
+  margin-right: 1.2rem;
+}
+
+.sliders:nth-of-type(3) ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.sliders:nth-of-type(3) ul li button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 3rem;
+  padding: 0 2rem;
+  width: fit-content;
+
+  border: 0;
+  border-radius: 30px;
+  background-color: var(--Light-second-background-color);
+
+  font-weight: bold;
+  font-size: .75rem;
+
+  position: relative;
+  bottom: 5rem;
+
+}
+
+
+
+
+
+/* SLiders 4 */
+.sliders:nth-of-type(4) ul li img {
+  width: 65vw;
+}
+
+.sliders:nth-of-type(4) ul li {
+  margin-right: 1.2rem;
+}
+
+.sliders:nth-of-type(4) ul li button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 3rem;
+  padding: 0 2rem;
+  width: fit-content;
+
+  border: 0;
+  border-radius: 30px;
+  background-color: var(--Light-second-background-color);
+
+  font-weight: bold;
+  font-size: .75rem;
+
+  position: relative;
+  bottom: 5rem;
+
+}
+
+
+.sliders:nth-of-type(4) ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+
+/* sliders 2 */
+
+.sliders:nth-of-type(2) div ul:first-child li:first-of-type {
+  background: var(--ikea-rood);
+}
+
+
+
+.sliders:nth-of-type(2) div ul:first-child li:nth-of-type(2) p,
+.sliders:nth-of-type(2) div ul:first-child li:nth-of-type(3) p,
+.sliders:nth-of-type(2) div ul:first-child li:nth-of-type(4) p {
+  color: var(--Light-main-header-color);
+}
+
+.sliders:nth-of-type(2) div ul:first-child li:nth-of-type(2) h3,
+.sliders:nth-of-type(2) div ul:first-child li:nth-of-type(3) h3,
+.sliders:nth-of-type(2) div ul:first-child li:nth-of-type(4) h3 {
+  color: var(--Light-main-header-color);
+}
+
+.sliders:nth-of-type(2) div ul:first-child li p,
+h3 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+
+.sliders:nth-of-type(2) div ul li button img {
+  width: 5vw;
+  height: auto;
+}
+
+.sliders:nth-of-type(2) div ul li button {
+  background-color: var(--second-button-color);
+  border: 0;
+  border-radius: 30rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* **** INFORMATIE **** */
+.informatie div {
+  background-color: var(--Light-main-background-color);
+  margin: 0.5rem 0 0.5rem 0;
+  padding: 1.5rem;
+  width: 77vw;
+}
+
+
+.informatie img {
+  width: 1.5rem;
+}
+
+.informatie h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.informatie div a {
+  text-decoration: underline;
+  color: var(--Light-main-text-color);
+}
+
+.informatie p {
+  color: var(--Light-main-text-color);
+}
+
+
+
+
+
+
+
+
+/* *** VIJLIGHEID **** */
+.vijligheid {
+  background-color: var(--Light-main-header-color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding: 2.5rem;
+  padding-bottom: 3.8rem;
+  margin-bottom: 3rem;
+}
+
+
+.vijligheid p {
+  color: var(--Light-second-text-color);
+}
+
+.vijligheid a {
+  text-decoration: underline;
+  font-weight: bold;
+  color: var(--Light-second-text-color);
+}
+
+.vijligheid li {
+  color: var(--Light-second-text-color);
+}
+
+.vijligheid h2 {
+  color: var(--Light-second-text-color);
+}
+
+
+.vijligheid button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 3rem;
+  padding: 0 2rem;
+  margin: 2rem 0 0 0;
+  width: fit-content;
+
+  border: 0;
+  border-radius: 30px;
+  background-color: var(--Light-main-button-color);
+
+  font-weight: bold;
+  font-size: .75rem;
+}
+
+/* https://www.ikea.com/nl/nl/ */
+
+
+footer {
+  background-color: var(--Light-main-background-color);
+
+}
+
+footer h2 {
+  margin-bottom: 0.25rem;
+}
+
+footer h3 {
+  color: var(--Light-main-header-color);
+  font-size: 1rem;
+
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+footer p {
+  margin-bottom: 1.5rem;
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+.lijn-horizontaal {
+  width: 90vw;
+  height: .09rem;
+  background-color: var(--Light-main-line-color);
+  border-radius: 1rem;
+}
+
+footer section {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+footer section:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+}
+
+footer button:first-of-type {
+  background-color: var(--Light-second-button-color);
+
+  color: var(--Light-second-text-color);
+  font-weight: bold;
+  font-size: .75rem;
+
+
+  border-radius: 64px;
+  border: 0;
+
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 3rem;
+  padding: 0 2rem;
+  margin: 1rem 0 1rem 0;
+  width: 50%;
+
+}
+
+/* https://www.ikea.com/nl/nl/ */
+
+
+
+
+
+
+/* FOOTER */
+footer section:nth-of-type(3) ul:nth-of-type(3) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer section:nth-of-type(3) ul {
+  display: flex;
+  margin-top: 1rem;
+}
+
+footer section:nth-of-type(3) ul:nth-of-type(1) img {
+  width: 2.2rem;
+  margin: 1rem 1rem 0.5rem 0;
+}
+
+footer section:nth-of-type(3) ul:nth-of-type(2) {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: 1rem;
+}
+
+footer section:nth-of-type(3) ul:nth-of-type(2) li {
+  margin-right: 1rem;
+}
+
+footer section:nth-of-type(3) ul:nth-of-type(2) img {
+  width: 3.4rem;
+}
+
+footer section:nth-of-type(3) ul li button img {
+  width: 1rem;
+  padding-right: 0.5rem;
+}
+
+footer section:nth-of-type(3) ul li button {
+  border-radius: 64px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 2.8rem;
+  padding: 0 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--Light-main-button-color);
+
+  font-weight: bold;
+  font-size: .75rem;
+  color: var(--Light-second-button-color);
+
+  margin: 1rem 0 1rem 0;
+}
+
+/* https://www.ikea.com/nl/nl/ */
+
+footer section:nth-of-type(3) ul:nth-of-type(4) {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer section:nth-of-type(3) ul:nth-of-type(4) li {
+  display: inline-block;
+  margin-inline: 0 1.25rem;
+  padding: 0.5rem 0;
+
+  font-size: 0.85rem;
+}
+
+
+
+
+
+
+
+
+
+/* *** UITKLAP MENUS *** */
+.uitklapmenus {
+  display: none;
+  transition: display 0.3s ease;
+}
+
+.uitklapmenus.active {
+  display: block;
+}
+
+/* https://chat.openai.com/c/ed29a705-cec3-46fb-a21f-15b470288b3a */
+
+
+
+
+
+
+
+/* pagina 2 general */
+.pagina2 main {
+  margin: 0;
+}
+
+.pagina2 {
+  margin: 0;
+}
+
+.pagina2 header,
+.pagina2 section:nth-of-type(2),
+.pagina2 section:nth-of-type(3),
+.pagina2 section:nth-of-type(4) .pagina2 section:nth-of-type(5) .pagina2 section:nth-of-type(6),
+.pagina2 footer section {
+  margin: 0 1rem 0 1rem;
+}
+
+
+
+
+
+
+/* SECTION 1 */
+.pagina2 main section:nth-of-type(1) {
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+/* *** CAROUSEL FOTOS *** */
+
+@media screen and (min-width:1843px) {
+  #carousel-container ul li img {
+    width: 100vw;
+    height: 110vh;
+
+  }
+
+}
+
+.pagina2 #carousel-container div button:active {
+  border: 2%;
+  border-radius: 30%;
+  background-color: var(--Light-main-active-button);
+}
+
+
+.pagina2 #carousel-container div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.pagina2 #carousel-container div button:first-of-type {
+  margin: 0;
+}
+
+.pagina2 #carousel-container div button {
+  border: 0px;
+  border-radius: 2rem;
+  width: .5rem;
+  height: .5rem;
+  margin-left: .5rem;
+  background-color: var(--Light-main-text-color);
+}
+
+
+
+.pagina2 #carousel-container ul li {
+  width: 100vw;
+  height: auto;
+  display: none;
+}
+
+.pagina2 #carousel-container ul li img {
+  width: 100vw;
+  height: auto;
+
+
+}
+
+.pagina2 #carousel-container ul .active-carousel {
+  display: block;
+}
+
+/* hulp van broer  */
+
+
+
+
+/* SECTION 2 */
+
+.pagina2 section:nth-of-type(1) ul li img {
+  width: 100vw;
+}
+
+
+
+.pagina2 main section:nth-of-type(2) div {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+/*  *** STARS *** */
+
+.stars {
+  display: inline-block;
+  font-size: 1.25rem;
+  color: var(--Light-main-header-color);
+  /* Set the default star color */
+  cursor: pointer;
+}
+
+.stars::before {
+  content: "\2605";
+  /* Unicode character for a solid star */
+
+}
+
+.stars[data-rating="0"]::before {
+  color: var(--Light-main-background-color);
+  /* Set the color for unrated stars */
+}
+
+.stars[data-rating="1"]::before,
+.stars[data-rating="2"]::before,
+.stars[data-rating="3"]::before,
+.stars[data-rating="4"]::before,
+.stars[data-rating="5"]::before {
+  color: var(--Light-main-header-color);
+}
+
+/* https://chat.openai.com/c/ed29a705-cec3-46fb-a21f-15b470288b3a */
+
+
+
+
+
+
+/*** SECTION 3 ****/
+
+
+.pagina2 main section:nth-of-type(3) ul {
+  border-radius: 1rem;
+  border: .08rem solid var(--Light-main-border-color);
+  background-color: var(--Light-main-background-color);
+  padding: 1.3rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.pagina2 main section:nth-of-type(3) ul li {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.pagina2 main section:nth-of-type(3) div {
+  display: flex;
+}
+
+.pagina2 main section:nth-of-type(3) ul li div {
+  display: flex;
+  flex-direction: column;
+}
+
+.pagina2 main section:nth-of-type(3) ul li img {
+  width: 1.2rem;
+  height: 1rem;
+  margin-right: 1rem;
+  margin-top: .5rem;
+}
+
+.pagina2 main section:nth-of-type(3) ul li img:nth-child(2) {
+  width: 1rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.pagina2 main section:nth-of-type(3) img {
+  width: 20vw;
+}
+
+.pagina2 .lijn-horizontaal {
+  margin: 1rem 0 1rem 0;
+}
+
+.pagina2 main section:nth-of-type(3) h2 {
+  font-size: .95rem;
+}
+
+.pagina2 main section:nth-of-type(3) li h3 {
+  font-size: .875rem;
+  color: var(--Light-main-header-color);
+  margin: 0;
+}
+
+.pagina2 main section:nth-of-type(3) li p {
+  font-size: 1rem;
+}
+
+.pagina2 main section:nth-of-type(3) p:nth-of-type(2) {
+  font-size: .75rem;
+  margin: 1rem 0 .5rem 0;
+}
+
+.pagina2 main section:nth-of-type(3) input {
+  width: 20rem;
+
+  display: inline-flex;
+  text-align: center;
+
+  padding: 0 0.5rem;
+
+  background-color: var(--Light-main-button-color);
+
+  border: .09rem solid var(--Light-main-border-color);
+  border-radius: 64px
+}
+
+.pagina2 main section:nth-of-type(3) div button {
+  background-color: var(--Light-main-button-color);
+  color: var(--Light-main-header-color);
+
+  border: 0;
+
+  padding: 0;
+  margin: 0;
+  width: 2rem;
+
+  font-size: 1.7rem;
+}
+
+.pagina2 main section:nth-of-type(3) button {
+  background-color: var(--ikea-blauw);
+
+  color: var(--Light-second-text-color);
+  font-weight: bold;
+  font-size: 1rem;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 3.5rem;
+  width: 100%;
+
+  padding: 0 2rem;
+  margin: 1rem 0 1rem 0;
+
+  box-sizing: border-box;
+
+  border: 0;
+  border-radius: 6rem;
+}
+
+
+
+
+.pagina2 main section:nth-of-type(3) p {
+  font-size: 1.25rem;
+}
+
+
+
+
+
+
+
+
+.pagina2 .sliders {
+  margin: 0 1rem 6rem 1rem;
+  width: 90vw;
+}
+
+.pagina2 .sliders li {
+  margin-right: 1rem;
+}
+
+.pagina2 .sliders h2 {
+  font-size: .75rem;
+  margin-bottom: 0;
+}
+
+.pagina2 .sliders h3 {
+  color: var(--Light-main-header-color);
+  margin: 1rem 0 1rem 0;
+}
+
+.pagina2 .sliders img {
+  height: 8rem;
+  width: 9rem;
+}
+
+.pagina2 .sliders .stars {
+  font-size: 1rem;
+}
+
+.pagina2 .sliders div {
+  display: flex;
+}
+
+.backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  /* Adjust the distance from the bottom as needed */
+  right: 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+/* *** FOOTER PAGINA 2 *** */
+
+
+.pagina2 footer button:nth-of-type(1) {
+  align-self: center;
+}
+
+.pagina2 footer button:nth-of-type(2) {
+  background-color: var(--Light-second-button-color);
+  color: var(--Light-second-text-color);
+  font-weight: bold;
+  font-size: .75rem;
+  border-radius: 64px;
+  border: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 3rem;
+  padding: 0 2rem;
+  margin: 1rem 0 1rem 0;
+  width: 50%;
+}
+
+.pagina2 main section:nth-of-type(4) {
+  margin: 1rem;
+}
+
+.pagina2 main h2 {
+  margin: 1rem;
+
+  font-size: .9rem;
+}
+
+.pagina2 main section h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
